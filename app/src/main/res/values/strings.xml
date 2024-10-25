@@ -11,6 +11,9 @@
         <item> USD </item>
         <item> VND </item>
         <item> AUD </item>
-        <item> JYP </item>
+        <item> JPY </item>
+        <item> CAD </item>
+        <item> DKK </item>
+        <item> SEK </item>
     </string-array>
 </resources>

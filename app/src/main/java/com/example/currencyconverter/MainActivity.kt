@@ -1,5 +1,6 @@
 package com.example.currencyconverter
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -57,7 +58,6 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
             }
-
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
         })
@@ -75,12 +75,12 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
             }
-
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
         })
     }
 
+    @SuppressLint("DefaultLocale")
     private fun convertFromBaseCurrency() {
         if (baseCurrency == convertedCurrency) {
             toCurrency.setText(fromCurrency.text.toString())
@@ -99,6 +99,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    @SuppressLint("DefaultLocale")
     private fun convertToBaseCurrency() {
         if (baseCurrency == convertedCurrency) {
             fromCurrency.setText(toCurrency.text.toString())
