@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">CurrencyConverter</string>
+    <string name="name"> Currency Converter </string>
+    <string name="_0">0</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="currency_converter">Currency Converter</string>
+
+    <string-array name="currencies">
+        <item> EUR </item>
+        <item> USD </item>
+        <item> VND </item>
+        <item> AUD </item>
+        <item> JYP </item>
+    </string-array>
+</resources>
